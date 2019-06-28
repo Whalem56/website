@@ -21,7 +21,7 @@ nav {
     height: 4rem;
     background-color: grey;
     border: none;
-    border-bottom: 3px black solid;
+    border-bottom: 3px rgb(80, 80, 80) solid;
 }
 
 nav a {
@@ -42,28 +42,61 @@ nav a:hover {
 
 .container {
     width: 80%;
-    margin: 6rem auto 0 auto;
+    margin: 0 auto 0 auto;
     text-align: justify;
     line-height: 2rem;
+    overflow: hidden;
 }
 
 .topic {
     text-align: center;
 }
 
-.picture {
+#authorPic {
     float: right;
     max-width: 40%;
-    margin: 10 25px;
+    margin: 10px 5rem 1rem 5rem;
 }
 
 .footer {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    background: grey;
+    width: 100%;
 }
 
 .icon {
     padding-right: 7px;
+}
+
+#welcome {
+    width: 100%;
+    padding: 1rem;
+    margin: 4rem auto 2rem auto;
+    text-align: center;
+    line-height: 2rem;
+    overflow: hidden;
+    background-image: url('../images/light1.jpg');
+    background-position: 2000 500;
+}
+
+@media(max-width: 600px){
+    #authorPic {
+        display: block;
+        float: none;
+        min-width: 100%;
+        margin: 1rem auto;
+    }
+
+    nav a {
+        display: none;
+    }
+}
+
+@media(max-width: 650px){
+    nav a {
+        display: none;
+    }
 }
 
 

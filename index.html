@@ -11,16 +11,18 @@
     <h2 class="name">Will Richardson</h2>
     <header>
         <nav>
-            <a href="#"><i class="fas fa-home icon"></i>Home</a><a href="#"><i class="fa fa-book icon"></i>About</a><a href="#"><i class="far fa-envelope icon"></i>Contact</a>
+            <a href="#" onclick=handleClick()><i class="fas fa-home icon"></i>Home</a><a href="#" onclick=handleClick()><i class="fa fa-book icon"></i>About</a><a href="#" onclick=handleClick()><i class="far fa-envelope icon"></i>Contact</a>
         </nav>
     </header>
-    <div class="container">
+    <div id="welcome">
         <h1 class="topic">Welcome to my Practice Website!</h1>
         <h4 class="topic">(Built using vanilla HTML5 and CSS)</h4>
+    </div>
+    <div class="container">
         <article>
             <h3 class="topic">
+                <img id="authorPic" src="./images/author.jpg" alt="picture of author and mother"/>
                 Topic 1
-                <img class="picture" src="./images/author.jpg" alt="author picture"/>
             </h3>
             <p>
                 
@@ -35,9 +37,15 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam laudantium, blanditiis nisi error distinctio tempora nam perferendis ipsa aspernatur ea earum excepturi minima inventore porro nostrum esse! Laborum, eveniet harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa earum doloribus maxime consequatur ad veniam at repellendus iusto eius, recusandae molestias, accusantium expedita, voluptatibus voluptatem optio non magni illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellat eveniet libero debitis fugit placeat impedit reiciendis soluta aspernatur. Doloribus dolores quibusdam ducimus placeat atque quidem velit sed fugit
             </p>
         </article>
-        <footer class="footer">
-            &copy;2019, Will Richardson. This isn't real.
-        </footer>
     </div>
+    <footer class="footer">
+            &copy;2019 Will Richardson. This isn't real.
+    </footer>
+
+    <script>
+        function handleClick() {
+            alert("We'll wait for a framework before routes are implemented ... :)");
+        }
+    </script>
 </body>
 </html>
